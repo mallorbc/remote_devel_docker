@@ -33,4 +33,5 @@ RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh \
 
 RUN conda init \
 && source ~/.bashrc \
-&& conda create -n torch pytorch=1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch
+&& conda create -n torch pytorch=1.7.0 torchvision torchaudio cudatoolkit=11.0 -c pytorch \
+&& conda install -n torch matplotlib
